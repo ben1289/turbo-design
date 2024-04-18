@@ -1,0 +1,5 @@
+{
+  "extends": "@turbo-design/tsconfig/base.json",
+  "include": ["."],
+  "exclude": ["vite.config.ts"]
+}

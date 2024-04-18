@@ -1,0 +1,22 @@
+{
+  "name": "@turbo-design/hooks",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build"
+  },
+  "peerDependencies": {
+    "element-plus": "^2.7.0",
+    "vue": "^3.4.21"
+  },
+  "dependencies": {
+    "@turbo-design/locale": "workspace:^",
+    "lodash-es": "^4.17.21"
+  }
+}

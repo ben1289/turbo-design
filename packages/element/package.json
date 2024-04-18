@@ -1,0 +1,28 @@
+{
+  "name": "@turbo-design/element",
+  "version": "0.0.0",
+  "type": "module",
+  "description": "A Component Library for Vue3 and element-plus",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build"
+  },
+  "peerDependencies": {
+    "element-plus": "^2.7.0",
+    "vue": "^3.4.21"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "@turbo-design/hooks": "workspace:^",
+    "@turbo-design/locale": "workspace:^",
+    "@turbo-design/utils": "workspace:^",
+    "@vueuse/core": "^10.9.0",
+    "lodash-es": "^4.17.21",
+    "vuedraggable": "^4.1.0"
+  }
+}

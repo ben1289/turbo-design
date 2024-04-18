@@ -1,0 +1,45 @@
+{
+  "name": "turbo-design",
+  "private": true,
+  "author": "Macro Ben",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "publish": "changeset publish",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.13.2",
+    "@changesets/cli": "^2.27.1",
+    "@commitlint/cli": "^19.2.2",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@turbo-design/element": "workspace:^",
+    "@turbo-design/hooks": "workspace:^",
+    "@turbo-design/locale": "workspace:^",
+    "@turbo-design/tsconfig": "workspace:^",
+    "@turbo-design/utils": "workspace:^",
+    "@types/lodash-es": "^4.17.12",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "eslint": "^8.57.0",
+    "eslint-plugin-format": "^0.1.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "sass": "^1.75.0",
+    "turbo": "latest",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.9",
+    "vite-plugin-dts": "^3.8.3"
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx,vue}": "eslint --fix"
+  },
+  "packageManager": "pnpm@8.9.0",
+  "engines": {
+    "node": ">=18"
+  }
+}
