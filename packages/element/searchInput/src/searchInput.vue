@@ -60,13 +60,11 @@ function change(row: Row) {
  */
 function inputChangeHandler(label: string) {
   if (props.manualInput) {
-    emit('update:modelValue', label)
-    emit('update:label', label)
+    change({ [props.labelKey]: label, [props.valueKey]: label })
     return
   }
   if (inputLabel.value === '') {
-    emit('update:modelValue', '')
-    emit('update:label', '')
+    change({ [props.labelKey]: '', [props.valueKey]: '' })
   } else if (inputLabel.value !== props.label) {
     inputLabel.value = props.label
   }
